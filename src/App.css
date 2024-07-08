@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+
+.nav {
+  color: #E9AFA3;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #E9AFA3;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #75A8DF;
+  font-weight: bold;
+}
+
+.nav-link.hover {
+  color: #6DE1EE;
+}
