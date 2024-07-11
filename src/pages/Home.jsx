@@ -3,7 +3,7 @@ export default function Home() {
     <div>
       <h1>Home Page</h1>
       <p>
-      Welcome to My Portfolio <br />
+     <h2> Welcome to My Portfolio</h2>  <br />
 Hi, I'm Lauren, <br />
 a passionate Full-Stack Web Developer with a strong background in business and government. I recently transitioned into tech to leverage my analytical and problem-solving skills in a dynamic and innovative industry.
 
