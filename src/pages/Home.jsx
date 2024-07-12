@@ -1,22 +1,42 @@
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>
-     <h2> Welcome to My Portfolio</h2>  <br />
-Hi, I'm Lauren, <br />
-a passionate Full-Stack Web Developer with a strong background in business and government. I recently transitioned into tech to leverage my analytical and problem-solving skills in a dynamic and innovative industry.
+    <div style={{ fontFamily: 'Arial, sans-serif', margin: '20px', lineHeight: '1.6' }}>
+      <h1 style={{ color: '#333' }}>Welcome to My Portfolio</h1>
+      <hr style={{ width: '200px', margin: '10px auto' }} />
 
-I specialize in HTML, CSS, JavaScript, WebAPIs, Node.js, Express.js, SQL, MongoDB, React, and the MERN stack. My portfolio showcases my projects, where I've combined my technical skills with my experience in program management and client services to build robust and user-friendly applications.
+      <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm [Your Name], a passionate Full-Stack Web Developer with a strong background in business and government.
+          I recently transitioned into tech to leverage my analytical and problem-solving skills in a dynamic and innovative industry.
+        </p>
+      </section>
 
-Explore my work and see how I can bring value to your team or project.
+      <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
+        <h2>Skills and Technologies</h2>
+        <p>I am fluent in:</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>WebAPIs</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>SQL</li>
+          <li>MongoDB</li>
+          <li>React</li>
+          <li>MERN Stack</li>
+        </ul>
+      </section>
 
-Recent Projects
-Cookie Clicker Game: A fun and interactive game that challenges users to click their way to the top of the leaderboard.
-Book Recommendation Application: A platform that helps users discover their next favorite book based on personalized recommendations.
-E-commerce Site for Coffee Products: An online store offering a variety of coffee products, designed with a user-friendly interface and seamless shopping experience.
-Feel free to contact me if you have any questions or if you'd like to discuss potential opportunities.
-      </p>
+
+
+      <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
+        <h2>Contact</h2>
+        <p>
+          Feel free to <a href="#Contact">contact me</a> if you have any questions or if you'd like to discuss potential opportunities.
+        </p>
+      </section>
     </div>
   );
 }
