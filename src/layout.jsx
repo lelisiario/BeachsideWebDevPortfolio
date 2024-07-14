@@ -21,24 +21,16 @@ const Layout = ({ children }) => {
       </button>
       <nav className="nav nav-tabs">
         <div className="nav-item">
-          <Link to="about" smooth={true} duration={500} className="scroll-link">
-            About
-          </Link>
+
         </div>
         <div className="nav-item">
-          <Link to="services" smooth={true} duration={500} className="scroll-link">
-            Services
-          </Link>
+
         </div>
         <div className="nav-item">
-          <Link to="portfolio" smooth={true} duration={500} className="scroll-link">
-            Portfolio
-          </Link>
+
         </div>
         <div className="nav-item">
-          <Link to="contact" smooth={true} duration={500} className="scroll-link">
-            Contact
-          </Link>
+
         </div>
       </nav>
       {children}
