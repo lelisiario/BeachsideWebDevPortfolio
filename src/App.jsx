@@ -1,4 +1,6 @@
-// Bringing in the required import from 'react-router-dom'
+import React from 'react';
+import Contact from './pages/Contact';
+import './data/projectData';
 import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs';
 
@@ -10,6 +12,15 @@ function App() {
         <Outlet />
       </main>
     </>
+  );
+}
+
+function ContactPageApp() {
+  return (
+    <div className="Contact">
+      <h1>Contact Us</h1>
+      <Contact />
+    </div>
   );
 }
 

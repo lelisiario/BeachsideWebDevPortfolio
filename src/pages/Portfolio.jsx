@@ -1,28 +1,27 @@
-export default function Portfolio() {
-  return (
-    <div>
-      <h1>Portfolio</h1>
-      <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
-        <p>
-          My portfolio showcases my projects, where I've combined my technical skills with my experience in program management and client services to build robust and user-friendly applications.
-        </p>
-        <p>Explore my work and see how I can bring value to your team or project.</p>
-      </section>
+import React from 'react';
+import { projects } from '../data/projectData';
 
-      <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
-        <h2>Recent Projects</h2>
-        <ul>
-          <li>
-            <strong>Cookie Clicker Game:</strong> A fun and interactive game that challenges users to click their way to the top of the leaderboard.
-          </li>
-          <li>
-            <strong>Book Recommendation Application:</strong> A platform that helps users discover their next favorite book based on personalized recommendations.
-          </li>
-          <li>
-            <strong>E-commerce Site for Coffee Products:</strong> An online store offering a variety of coffee products, designed with a user-friendly interface and seamless shopping experience.
-          </li>
-        </ul>
-      </section>
+const Portfolio = () => {
+  return (
+    <div style={{ maxWidth: '1200px', margin: 'auto', padding: '20px' }}>
+      <h1>Portfolio</h1>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+        {projects.map((project, index) => (
+          <div key={index} style={{ width: '300px', margin: '20px', textAlign: 'center' }}>
+            <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+              <img 
+                src={project.imageUrl} 
+                alt={project.title} 
+                style={{ width: '100%', height: 'auto', borderRadius: '8px' }} 
+              />
+            </a>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
+
+export default Portfolio;
