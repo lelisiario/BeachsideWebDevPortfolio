@@ -1,0 +1,35 @@
+.footer {
+    background-color: #75A8DF; /* Nav bar background color */
+    color: #BCECEF; /* Nav bar text color */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center align items */
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons li a {
+    color: #BCECEF; /* Nav bar text color */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .social-icons li a i {
+    margin-right: 5px;
+  }
+  
+  .social-icons li a:hover {
+    color: #E9AFA3; /* Highlighted tab color */
+  }
+  

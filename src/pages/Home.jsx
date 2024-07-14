@@ -1,37 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import React from 'react';
+import Layout from '../layout';
 import '../App.css';
+import PortfolioCarousel from '../components/portfolioCarousel';
 
 const HomePage = () => {
-  const [theme, setTheme] = useState('light-mode');
-
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === 'light-mode' ? 'dark-mode' : 'light-mode');
-  };
-
   return (
-    <div>
-      <button className="mode-toggle" onClick={toggleTheme}>
-        {theme === 'light-mode' ? 'Dark Mode' : 'Light Mode'}
-      </button>
-      <nav className="nav nav-tabs">
-        <div className="nav-item">
-          <Link to="about" smooth={true} duration={500} className="scroll-link">About</Link>
-        </div>
-        <div className="nav-item">
-          <Link to="services" smooth={true} duration={500} className="scroll-link">Services</Link>
-        </div>
-        <div className="nav-item">
-          <Link to="portfolio" smooth={true} duration={500} className="scroll-link">Portfolio</Link>
-        </div>
-        <div className="nav-item">
-          <Link to="contact" smooth={true} duration={500} className="scroll-link">Contact</Link>
-        </div>
-      </nav>
+    <Layout>
       <section id="about" className="section">
         <div className="content">
           <h1>Beachside Web Development</h1>
@@ -47,11 +21,9 @@ const HomePage = () => {
           <h2>Services</h2>
           <h3>Comprehensive Web Solutions </h3>
           <p> From front-end design to back-end development, we offer a full spectrum of services designed to elevate your digital presence. Our expertise includes:
-          <ul>
-            <li> Web Design: Crafting visually stunning and user-friendly interfaces. </li>
-            <li> Web Development: Building scalable and robust web applications. </li>
-            <li> UI/UX Design: Enhancing user experiences through intuitive design principles. </li>
-          </ul>
+          <li> Web Design: Crafting visually stunning and user-friendly interfaces. </li>
+          <li> Web Development: Building scalable and robust web applications. </li>
+          <li> UI/UX Design: Enhancing user experiences through intuitive design principles. </li> <br />
               Client-Centric Approach
               At Beachside Web Development, we prioritize understanding your business objectives to deliver solutions that not only meet but exceed your expectations. 
               Let's collaborate to transform your ideas into impactful digital experiences.</p>
@@ -62,6 +34,7 @@ const HomePage = () => {
           <h2>Portfolio</h2>
           <p>Explore our portfolio, where each project tells a story of innovation and problem-solving. 
             From intuitive user interfaces to robust backend architectures, our projects showcase our commitment to excellence and client satisfaction.</p>
+            <PortfolioCarousel />
         </div>
       </section>
       <section id="contact" className="section">
@@ -72,7 +45,7 @@ const HomePage = () => {
           We look forward to collaborating with you on your next project.</p>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 

@@ -1,0 +1,14 @@
+
+.carousel .control-dots .dot:before {
+  content: "\f111"; /* FontAwesome circle icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.carousel .control-dots .dot.selected:before {
+  color: #E9AFA3;
+}
+
+.carousel .border {
+  border: 1px solid #E9AFA3; /* Border color */
+}
