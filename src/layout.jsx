@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
 import './App.css';
 import Footer from '../src/components/footer'; // Import the Footer component
 
@@ -21,16 +20,12 @@ const Layout = ({ children }) => {
       </button>
       <nav className="nav nav-tabs">
         <div className="nav-item">
-
         </div>
         <div className="nav-item">
-
         </div>
         <div className="nav-item">
-
         </div>
         <div className="nav-item">
-
         </div>
       </nav>
       {children}

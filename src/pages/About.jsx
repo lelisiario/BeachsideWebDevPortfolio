@@ -1,7 +1,10 @@
 import React from 'react';
+import Layout from '../layout';
+import App from '../App.css';
 
 const About = () => {
   return (
+    <Layout> 
     <div style={{ maxWidth: '800px', margin: 'auto', textAlign: 'center', padding: '20px' }}>
       <h1>About Me</h1>
       <p>
@@ -18,6 +21,7 @@ const About = () => {
         In my free time, I enjoy reading, traveling, writing, and continuously learning new skills. These interests not only enrich my personal life but also inspire creativity and innovation in my professional work.
       </p>
     </div>
+    </Layout>
   );
 };
 

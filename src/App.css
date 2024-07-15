@@ -1,4 +1,13 @@
-/* App.css */
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   --background-color-light: #f8f3ed; /* Light mode background */
@@ -84,7 +93,7 @@ a.scroll-link {
   display: inline-block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #75A8DF; /* Cornflower */
+  background-color: #75A8DF;
   color: #FFF;
   text-decoration: none;
   border-radius: 5px;
@@ -96,7 +105,7 @@ a.scroll-link:hover {
 }
 
 .section:not(:last-child) {
-  margin-bottom: 40px; /* Add spacing between sections */
+  margin-bottom: 20px; /* Add spacing between sections */
 }
 
 .mode-toggle {

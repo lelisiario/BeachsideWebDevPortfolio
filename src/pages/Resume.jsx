@@ -1,8 +1,10 @@
 import React from 'react';
+import Layout from '../layout';
 
 const Resume = () => {
   return (
-    <div style={{ maxWidth: '800px', margin: 'auto', padding: '20px' }}>
+    <Layout>
+        <div style={{ maxWidth: '800px', margin: 'auto', padding: '20px' }}>
       <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
         <h2>Skills and Technologies</h2>
         <p>I am fluent in:</p>
@@ -91,7 +93,9 @@ const Resume = () => {
           </li>
         </ul>
       </section>
-    </div>
+    </div>  
+    </Layout>
+
   );
 };
 

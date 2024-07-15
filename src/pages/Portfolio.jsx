@@ -1,8 +1,10 @@
 import React from 'react';
 import { projects } from '../data/projectData';
+import Layout from '../layout';
 
 const Portfolio = () => {
   return (
+    <Layout> 
     <div style={{ maxWidth: '1200px', margin: 'auto', padding: '20px' }}>
       <h1>Portfolio</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
@@ -21,6 +23,7 @@ const Portfolio = () => {
         ))}
       </div>
     </div>
+    </Layout>
   );
 };
 
