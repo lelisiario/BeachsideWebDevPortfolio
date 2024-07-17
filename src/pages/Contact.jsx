@@ -10,10 +10,10 @@ const Contact = () => {
           Feel free to reach out to me via LinkedIn or Twitter, or check out my GitHub profile.
         </p>
         <div className="social-links">
-          <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/lelisiario" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> GitHub
           </a>
-          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/laurenelisiario/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i> LinkedIn
           </a>
           <a href="https://x.com/BeachsideWebDev" target="_blank" rel="noopener noreferrer">
