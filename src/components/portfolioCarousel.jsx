@@ -15,7 +15,7 @@ const PortfolioCarousel = () => {
         <img src="src\assets\Reading Roundtable.PNG" alt="Reading-Roundtable" />
       </div>
       <div>
-        <img src="/path/to/project-image-3.jpg" alt="E-Coffee" />
+        <img src="src\assets\e-coffee.PNG" alt="E-Coffee" />
       </div>
       {/* Add more divs with images as needed */}
     </Carousel>

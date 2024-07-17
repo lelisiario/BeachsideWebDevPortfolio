@@ -1,142 +1,151 @@
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
+/* General Styles */
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --background-color-light: #f8f3ed; /* Light mode background */
-  --text-color-light: #667389; /* Light mode text */
-  --background-color-dark: #667389; /* Dark mode background */
-  --text-color-dark: #f8f3ed; /* Dark mode text */
-  --nav-background: #75A8DF; /* Nav bar background */
-  --nav-text: #BCECEF; /* Nav bar text */
-  --highlight-color: #E9AFA3; /* Highlighted tab color */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body.light-mode {
-  background-color: var(--background-color-light);
-  color: var(--text-color-light);
+html, body, .layout {
+  height: 100%;
 }
 
-body.dark-mode {
-  background-color: var(--background-color-dark);
-  color: var(--text-color-dark);
-}
-
-.nav {
-  background-color: var(--nav-background);
-  color: var(--nav-text);
-}
-
-.nav-item a {
-  color: var(--nav-text);
-  text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
-}
-
-.nav-item a.active {
-  background-color: var(--highlight-color);
-  border-radius: 5px;
-}
-
-.nav-item a:hover {
-  background-color: var(--highlight-color);
-  border-radius: 5px;
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .content {
-  max-width: 800px;
-  margin: auto;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
-  margin-bottom: 20px;
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
-  color: #75A8DF; /* Cornflower */
+main {
+  flex: 1;
 }
 
-h2 {
-  color: #7FE5F0; /* Turquoise */
+footer {
+  margin-top: auto;
 }
 
-h3 {
-  color: #667389; /* Blue Grey */
-}
-
-p, li {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-li {
-  list-style: none;
-  padding: 5px 0;
-}
-
-a.scroll-link {
-  display: inline-block;
-  margin: 20px auto;
+/* Navbar Styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
   background-color: #75A8DF;
-  color: #FFF;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left a {
+  margin-right: 20px;
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
-a.scroll-link:hover {
-  background-color: #7FE5F0; /* Turquoise */
+.nav-right {
+  display: flex;
+  align-items: center;
 }
 
-.section:not(:last-child) {
-  margin-bottom: 20px; /* Add spacing between sections */
+.nav-tabs {
+  display: flex;
+  list-style: none;
 }
 
-.mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: var(--nav-background);
-  color: var(--nav-text);
-  border: none;
-  padding: 10px 20px;
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Switch Styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-left: auto;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
 }
 
-.mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: var(--nav-background);
-  color: var(--nav-text);
-  border: none;
-  padding: 12px 24px; /* Increased padding */
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Added border-color transition */
-  border: 2px solid var(--highlight-color); /* Border styling */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
 }
 
-.mode-toggle:hover {
-  background-color: var(--highlight-color);
-  border-color: var(--nav-background); /* Change border color on hover */
+input:checked + .slider {
+  background-color: #2196F3;
 }
 
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Light and Dark Mode Styles */
+body.light-mode {
+  background-color: #f4ede3;
+  color: #3a405a;
+}
+
+body.dark-mode {
+  background-color: #3a405a;
+  color: #f4ede3;
+}
+
+.Beachside-image {
+  opacity: 0.8;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-links">
-        <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer" className="footer-link">
+        <a href="https://github.com/lelisiario" target="_blank" rel="noopener noreferrer" className="footer-link">
           <i className="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" className="footer-link">
+        <a href="https://www.linkedin.com/in/laurenelisiario/" target="_blank" rel="noopener noreferrer" className="footer-link">
           <i className="fab fa-linkedin"></i>
         </a>
         <a href="https://x.com/BeachsideWebDev" target="_blank" rel="noopener noreferrer" className="footer-link">

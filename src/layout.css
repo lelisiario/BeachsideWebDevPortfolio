@@ -1,7 +1,9 @@
-* {
+/* * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  
+
 html, body, .layout {
     height: 100%;
     margin: 0;
@@ -13,14 +15,14 @@ html, body, .layout {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures layout stretches to at least the height of the viewport */
-  }
+  /* }
   
   .content {
-    flex: 1; /* Allows content to expand to fill remaining space */
-    padding: 20px; /* Optional: Add padding to the content */
+    flex: 1; /* Allows content to expand to fill remaining space
+    padding: 20px;
     box-sizing: border-box;
   }
   
-  /* Import the footer styling */
+  /* 
   @import './Footer.css';
-  
+   */

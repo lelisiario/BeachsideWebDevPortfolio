@@ -14,12 +14,12 @@ const HomePage = () => {
             What drives me in the world of web development is the opportunity to create impactful solutions that simplify complexities and enhance user experiences. 
             Each project is not just a technological endeavor but a chance to make a meaningful difference in how businesses connect with their audiences.
           </p>
+        <img src="src\assets\bwd_about.jpg" alt="About us" className="Beachside-image" />  
         </div>
       </section>
       <section id="services" className="section">
         <div className="content">
           <h2>Services</h2>
-          <h3>Comprehensive Web Solutions </h3>
           <p> From front-end design to back-end development, we offer a full spectrum of services designed to elevate your digital presence. Our expertise includes:
           <li> Web Design: Crafting visually stunning and user-friendly interfaces. </li>
           <li> Web Development: Building scalable and robust web applications. </li>

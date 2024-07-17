@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Footer from '../src/components/footer'; // Import the Footer component
+import NavTabs from './components/NavTabs'; // Adjust the path if needed
+import Footer from './components/footer'; // Adjust the path if needed
 
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState('light-mode');
@@ -14,22 +15,10 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div>
-      <button className="mode-toggle" onClick={toggleTheme}>
-        {theme === 'light-mode' ? 'Dark Mode' : 'Light Mode'}
-      </button>
-      <nav className="nav nav-tabs">
-        <div className="nav-item">
-        </div>
-        <div className="nav-item">
-        </div>
-        <div className="nav-item">
-        </div>
-        <div className="nav-item">
-        </div>
-      </nav>
-      {children}
-      <Footer /> {/* Include the Footer component here */}
+    <div className="layout-container">
+      <NavTabs toggleTheme={toggleTheme} theme={theme} />
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 };
