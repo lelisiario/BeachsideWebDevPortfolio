@@ -19,14 +19,24 @@ const HomePage = () => {
       </section>
       <section id="services" className="section">
         <div className="content">
-          <h2>Services</h2>
-          <p> From front-end design to back-end development, we offer a full spectrum of services designed to elevate your digital presence. Our expertise includes:
-          <li> Web Design: Crafting visually stunning and user-friendly interfaces. </li>
-          <li> Web Development: Building scalable and robust web applications. </li>
-          <li> UI/UX Design: Enhancing user experiences through intuitive design principles. </li> <br />
-              Client-Centric Approach
-              At Beachside Web Development, we prioritize understanding your business objectives to deliver solutions that not only meet but exceed your expectations. 
-              Let's collaborate to transform your ideas into impactful digital experiences.</p>
+        <h2>Services</h2>
+<p>
+  From front-end design to back-end development, we offer a full spectrum of services designed to elevate your digital presence. Our expertise includes:
+</p>
+<ul>
+  <li>Web Design: Crafting visually stunning and user-friendly interfaces.</li>
+  <li>Web Development: Building scalable and robust web applications.</li>
+  <li>UI/UX Design: Enhancing user experiences through intuitive design principles.</li>
+</ul>
+<p>
+  <strong>Client-Centric Approach</strong><br />
+  At Beachside Web Development, we prioritize understanding your business objectives to deliver solutions that not only meet but exceed your expectations.
+  Let's collaborate to transform your ideas into impactful digital experiences.
+</p>
+<p>
+  While my long-term goal is to secure full-time employment in the tech industry, I am currently open to freelance work. This flexibility allows me to bring my skills and expertise to a variety of projects, helping businesses achieve their digital goals.
+</p>
+
         </div>
       </section>
       <section id="portfolio" className="section">

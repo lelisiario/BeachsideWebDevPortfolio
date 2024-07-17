@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import NavTabs from './components/NavTabs'; // Adjust the path if needed
-import Footer from './components/footer'; // Adjust the path if needed
+import NavTabs from './components/NavTabs';
+import Footer from './components/footer'; 
 
 const Layout = ({ children }) => {
   const [theme, setTheme] = useState('light-mode');
