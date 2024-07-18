@@ -2,6 +2,7 @@ import React from 'react';
 import { projects } from '../data/projectData';
 import Layout from '../layout';
 
+
 const Portfolio = () => {
   return (
     <Layout> 

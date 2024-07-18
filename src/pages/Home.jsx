@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../layout';
 import '../App.css';
 import PortfolioCarousel from '../components/portfolioCarousel';
+import bwd_about from "../assets/images/bwd_about.jpg";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,7 @@ const HomePage = () => {
             What drives me in the world of web development is the opportunity to create impactful solutions that simplify complexities and enhance user experiences. 
             Each project is not just a technological endeavor but a chance to make a meaningful difference in how businesses connect with their audiences.
           </p>
-        <img src="src\assets\bwd_about.jpg" alt="About us" className="Beachside-image" />  
+        <img src={bwd_about} alt="About us" className="Beachside-image" />  
         </div>
       </section>
       <section id="services" className="section">
