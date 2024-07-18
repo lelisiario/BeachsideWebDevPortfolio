@@ -1,7 +1,7 @@
-// projectData.js
-import Catzzeria from '../assets/images/Catzzeria.png';
-import ReadingRoundtable from '../assets/images/readingroundtable.png';
-import ECoffee from '../assets/images/ecoffee.png';
+
+import Catzzeria from '@/assets/images/Catzzeria.png';
+import ReadingRoundtable from '@/assets/images/readingroundtable.png';
+import ECoffee from '@/assets/images/ecoffee.png';
 
 export const projects = [
   {
