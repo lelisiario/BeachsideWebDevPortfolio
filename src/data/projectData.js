@@ -1,7 +1,6 @@
-
-import Catzzeria from '@/assets/images/Catzzeria.png';
-import readingroundtable from '@/assets/images/readingroundtable.png';
-import ecoffee from '@/assets/images/ecoffee.png';
+import Catzzeria from '../assets/images/Catzzeria.png';
+import ReadingRoundtable from '../assets/images/readingroundtable.png';
+import ECoffee from '../assets/images/ecoffee.png';
 
 export const projects = [
   {
@@ -13,13 +12,13 @@ export const projects = [
   {
     title: 'Reading Roundtable',
     description: 'An application that recommends books based on your interests.',
-    imageUrl: readingroundtable,
+    imageUrl: ReadingRoundtable,
     projectUrl: 'https://reading-roundtable-a1d1097f86e5.herokuapp.com/login',
   },
   {
     title: 'E-commerce Site for Coffee Products',
     description: 'An e-commerce platform for selling coffee products.',
-    imageUrl: ecoffee,
+    imageUrl: ECoffee,
     projectUrl: 'https://e-coffee-7d6cb3a5dc4c.herokuapp.com/',
   },
 ];
