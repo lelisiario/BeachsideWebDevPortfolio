@@ -7,7 +7,7 @@ const Resume = () => {
         <div style={{ maxWidth: '800px', margin: 'auto', padding: '20px' }}>
         <h1>My Resume</h1>
       <p>Here you can find a downloadable version of my resume.</p>
-      <a href="public\Elisiario_Resume_FullStack.pdf" download="Elisiario_Resume.pdf">
+      <a href="public\Fullstack_Resume.pdf" download="Fullstack_Resume.pdf">
         Download Resume
       </a>
       <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
