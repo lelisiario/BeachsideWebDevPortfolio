@@ -44,31 +44,32 @@ footer {
 /* Navbar Styles */
 .nav {
   display: flex;
+  flex-wrap: wrap; /* Allows the navbar to wrap */
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #75A8DF;
 }
 
-.nav-left {
+.nav-left, .nav-right {
   display: flex;
+  flex-wrap: wrap; /* Allows the navbar sections to wrap */
+  align-items: center;
 }
 
-.nav-left a {
+.nav-left a, .nav-right a {
   margin-right: 20px;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-}
-
 .nav-tabs {
   display: flex;
+  flex-wrap: wrap; /* Allows the tabs to wrap */
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
@@ -84,6 +85,33 @@ footer {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-left, .nav-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-left a, .nav-right a {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Adds spacing between wrapped items */
+  }
+
+  .nav-tabs {
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Adds spacing between wrapped items */
+  }
+}
+
 
 /* Switch Styles */
 .switch {
