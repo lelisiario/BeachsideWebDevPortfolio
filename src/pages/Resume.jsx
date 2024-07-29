@@ -6,12 +6,12 @@ const Resume = () => {
     <Layout>
         <div style={{ maxWidth: '800px', margin: 'auto', padding: '20px' }}>
         <h1>My Resume</h1>
-      <p>Here you can find a downloadable version of my resume.</p>
+      {/* <p>Here you can find a downloadable version of my resume.</p>
       <a href="public\Fullstack_Resume.pdf" download="Fullstack_Resume.pdf">
         Download Resume
-      </a>
+      </a> */}
       <section style={{ marginBottom: '20px', padding: '10px', border: '1px', borderRadius: '5px' }}>
-        <h2>Skills and Technologies</h2>
+        <h3>Skills and Technologies</h3>
         <p>I know:</p>
         <ul>
           HTML
@@ -42,6 +42,10 @@ const Resume = () => {
           <strong> Full-Stack Web Development Bootcamp</strong>
           <br />
           UC Berkley
+          <br />
+          <strong> Project Management Certificate</strong>
+          <br />
+          Google/Coursera
           <br />
             <strong>Master's Degree in Public Administration</strong>
             <br />
