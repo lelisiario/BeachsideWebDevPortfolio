@@ -1,5 +1,4 @@
-/* General Styles */
-body {
+  body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,32 +40,24 @@ footer {
   margin-top: auto;
 }
 
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Navbar Styles */
 .nav {
   display: flex;
-  flex-wrap: wrap; /* Allows the navbar to wrap */
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #75A8DF;
-}
-
-.nav-left, .nav-right {
-  display: flex;
-  flex-wrap: wrap; /* Allows the navbar sections to wrap */
-  align-items: center;
-}
-
-.nav-left a, .nav-right a {
-  margin-right: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
+  background-color: #2196F3;
 }
 
 .nav-tabs {
   display: flex;
-  flex-wrap: wrap; /* Allows the tabs to wrap */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -77,7 +68,7 @@ footer {
 }
 
 .nav-link {
-  color: #ffffff;
+  color: #3A405A;
   text-decoration: none;
 }
 
@@ -85,6 +76,65 @@ footer {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Dark Mode Toggle Styles */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3A405A;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #3A405A;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.label-text {
+  font-size: 16px;
+  color: #3A405A;
+  margin: 10px;
+}
+
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
@@ -153,7 +203,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #BCECEF;
 }
 
 input:checked + .slider:before {
@@ -162,13 +212,13 @@ input:checked + .slider:before {
 
 /* Light and Dark Mode Styles */
 body.light-mode {
-  background-color: #f4ede3;
+  background-color: #fdf3e5;
   color: #3a405a;
 }
 
 body.dark-mode {
   background-color: #3a405a;
-  color: #f4ede3;
+  color: #fdf3e5;
 }
 
 .Beachside-image {

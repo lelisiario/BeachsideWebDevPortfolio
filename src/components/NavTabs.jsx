@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../App.css'; // Ensure the correct path
 
@@ -34,10 +34,11 @@ const NavTabs = ({ toggleTheme, theme }) => {
           </Link>
         </li>
       </ul>
-      <div>
+      <div classname="dark-mode-toggle">
         <label className="switch">
           <input type="checkbox" onChange={toggleTheme} checked={theme === 'dark-mode'} />
           <span className="slider round"></span>
+          <span className="label-text">Dark Mode</span>
         </label>
       </div>
     </nav>
