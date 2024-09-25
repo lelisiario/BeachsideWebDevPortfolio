@@ -1,31 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beachside Web Development</title>
-      <!-- Basic favicons -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        
+        <!-- Description for SEO: Make it specific to your portfolio or business -->
+        <meta name="description" content="Lauren's portfolio - Full Stack Web Developer specializing in React, JavaScript, and MERN stack. Check out my projects and get in touch!" />
+        
+        <!-- Author information -->
+        <meta name="author" content="Lauren" />
+        
+        <!-- Keywords for SEO: Add relevant keywords -->
+        <meta name="keywords" content="Full Stack Developer, Web Development, React, JavaScript, Portfolio, MERN Stack, Projects, Lauren" />
+        
+        <!-- Robots tag to control indexing -->
+        <meta name="robots" content="index, follow" />
+        
+        <!-- Page Title: Update it with a specific and unique title -->
+        <title>Lauren's Portfolio - Full Stack Web Developer</title>
+        
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
 
-  <!-- Apple Touch Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <!-- Google Fonts: Make sure they align with your design -->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <!-- Open Graph (OG) Tags for social sharing -->
+        <meta property="og:title" content="Lauren's Portfolio - Full Stack Web Developer" />
+        <meta property="og:description" content="Explore Lauren's portfolio, showcasing React, JavaScript, and MERN stack projects. Get in touch for collaboration or freelance work." />
+        <meta property="og:image" content="assets/img/og-image.jpg" />
+        <meta property="og:url" content="https://www.your-portfolio.com" />
+        <meta property="og:type" content="website" />
+        
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lauren's Portfolio - Full Stack Web Developer" />
+        <meta name="twitter:description" content="Check out Lauren's portfolio and web development projects. Full Stack Web Developer specializing in React and JavaScript." />
+        <meta name="twitter:image" content="assets/img/twitter-card-image.jpg" />
+    </head>
 
-  <!-- Various favicon sizes for different devices -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Beachside Full Stack Web Development</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+        aria-controls="navbarResponsive" aria-expanded="false" 
+        aria-label="Toggle navigation menu">
+    <span class="navbar-toggler-icon"></span>
+</button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about" aria-label="Learn more about me">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services" aria-label="Explore my services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" aria-label="View my project portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" aria-label="Get in touch with me">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Turning Your Ideas into Waves of Code</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Providing full-stack web development solutions to bring your vision to life with clean, scalable code.</p>
+                        <a class="btn btn-primary btn-xl" href="#portfolio">View My Projects</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section about-bg" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Crafting Tailored Web Solutions</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">
+                            At Beachside Web Development, we specialize in turning your ideas into sleek, fully functional websites.
+                            Whether you're launching a new business or enhancing your online presence, we provide tailored solutions using the latest technologies to bring your vision to life.
+                        </p>
+                        <a class="btn btn-light btn-xl" href="#services">See Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">What I Offer</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-code-slash fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Custom Web Development</h3>
+                            <p class="text-muted mb-0">I create tailor-made, full stack, responsive websites for your business needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-speedometer2 fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Performance Optimization</h3>
+                            <p class="text-muted mb-0">I ensure your site runs smoothly with fast loading times and high performance.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">User-Friendly Design</h3>
+                            <p class="text-muted mb-0">I focus on creating intuitive and visually appealing user experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-tools fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Maintenance & Support</h3>
+                            <p class="text-muted mb-0">I provide ongoing support to keep your website up to date and secure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
-  <!-- Manifest for Android -->
-  <link rel="manifest" href="/site.webmanifest">
+<!-- Portfolio-->
+<div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- First Project -->
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="assets/img/portfolio/fullsize/Catzzeria.png" title="Catzzeria">
+                    <img class="img-fluid" src="assets/img/portfolio/fullsize/Catzzeria.png" alt="Catzzeria" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Front End Project</div>
+                        <div class="project-name">Catzzeria</div>
+                    </div>
+                </a>
+                <!-- Buttons for GitHub and Live Site -->
+                <div class="portfolio-buttons text-center mt-3">
+                    <a href="https://github.com/alfwall/catzzeria" class="btn btn-dark me-2" target="_blank">
+                        View on GitHub
+                    </a>
+                    <a href="https://alfwall.github.io/catzzeria/" class="btn btn-success" target="_blank">
+                        View Live Site
+                    </a>
+                </div>
+            </div>
 
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+            <!-- Second Project -->
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="assets/img/portfolio/fullsize/readingroundtable.png" title="Reading Roundtable">
+                    <img class="img-fluid" src="assets/img/portfolio/fullsize/readingroundtable.png" alt="Project Name 2" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Full Stack Project</div>
+                        <div class="project-name">Reading Roundtable</div>
+                    </div>
+                </a>
+                <!-- Buttons for GitHub and Live Site -->
+                <div class="portfolio-buttons text-center mt-3">
+                    <a href="https://github.com/AdjoaHackman/reading-roundtable" class="btn btn-dark me-2" target="_blank">
+                        View on GitHub
+                    </a>
+                    <a href="https://reading-roundtable-a1d1097f86e5.herokuapp.com/login" class="btn btn-success" target="_blank">
+                        View Live Site
+                    </a>
+                </div>
+            </div>
+
+            <!-- Third Project -->
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="assets/img/portfolio/fullsize/ecoffee.png" title="e-Coffee">
+                    <img class="img-fluid" src="assets/img/portfolio/fullsize/ecoffee.png" alt="e-Coffee" />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Full Stack Project</div>
+                        <div class="project-name">e-Coffee</div>
+                    </div>
+                </a>
+                <!-- Buttons for GitHub and Live Site -->
+                <div class="portfolio-buttons text-center mt-3">
+                    <a href="https://github.com/lelisiario/E-Coffee" class="btn btn-dark me-2" target="_blank">
+                        View on GitHub
+                    </a>
+                    <a href="https://e-coffee-7d6cb3a5dc4c.herokuapp.com/" class="btn btn-success" target="_blank">
+                        View Live Site
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">Let's Get In Touch!</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5">Ready to start your next project with us? Send us a message and we will get back to you as soon as possible!</p>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+                <!-- Modify your form to submit to Formspree -->
+                <form id="contactForm" action="https://formspree.io/f/mgvwjqnd" method="POST">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..." required />
+                        <label for="name">Full name</label>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" required />
+                        <label for="email">Email address</label>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" name="phone" placeholder="(123) 456-7890" />
+                        <label for="phone">Phone number</label>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <!-- Submit Button-->
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="bg-light py-5">
+    <div class="container px-4 px-lg-5">
+        <div class="row text-center mb-4">
+            <!-- Icon for Contra Link-->
+            <div class="col-4">
+                <a href="https://contra.com/stevie_writes_pl9qpqg1" target="_blank" class="text-primary">
+                    <div class="mb-2">
+                        <i class="bi bi-briefcase-fill fs-2"></i>
+                    </div>
+                </a>
+            </div>
+            <!-- LinkedIn Icon -->
+            <div class="col-4">
+                <a href="https://www.linkedin.com/in/laurenelisiario/" target="_blank" class="text-primary">
+                    <div class="mb-2">
+                        <i class="bi-linkedin fs-2"></i>
+                    </div>
+                </a>
+            </div>
+            <!-- GitHub Icon -->
+            <div class="col-4">
+                <a href="https://github.com/lelisiario" target="_blank" class="text-primary">
+                    <div class="mb-2">
+                        <i class="bi-github fs-2"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Copyright Section -->
+        <div class="small text-center text-muted">
+            Copyright Lauren Elisiario &copy; 2023 - Beachside Web Dev
+        </div>
+    </div>
+</footer>
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-XXXXX" crossorigin="anonymous" />
